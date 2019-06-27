@@ -1,11 +1,21 @@
-/*
-Creator: Maisy Dodge
-Date created: 06/24/2019
-Date last modified:
-*/
+body {
+    background-color: #C2C094;
+    font-family: "Raleway";
+    color: #46351D;
+    max-width: 1000px;
+    margin: auto;
+}
+.clear-float {
+    clear:both;
+}
+hr {
+  border: 3px solid #46351D;
+}
+header p{
+  margin-top: 10px;
+}
 
 /* Restaurant Name */
-
 .name h1{
   text-align: center;
   font-family: "Comfortaa", cursive;
@@ -13,6 +23,7 @@ Date last modified:
   position: relative;
 }
 
+/* Restaurant Description */
 .description {
   background-color: #BCC963;
   font-size: 20px;
@@ -23,6 +34,8 @@ Date last modified:
   margin-bottom: 0px;
   font-family: "Raleway", sans-serif;
 }
+
+/* Jumbotron */
 .jumbotron {
   background-color: #CF5C36;
   color: #46351D;
@@ -31,37 +44,19 @@ Date last modified:
   padding: 30px;
 }
 
-body {
-    background-color: #C2C094;
-    font-family: "Raleway";
-    color: #46351D;
-    max-width: 1000px;
-    margin: auto;
-}
-
-.clear-float {
-    clear:both;
-}
-
-hr {
-  border: 3px solid #46351D;
-}
-header p{
-  margin-top: 10px;
-}
+/* Carousel */
 .carousel-item{
   text-align: center;
   height: 150px;
   margin-top: 50px;
 }
 
-/* Nav styling */
+/* Navigation Bar */
 .nav {
   background-color: #91972A;
   border-top: 3px solid #46351D;
   border-bottom: 3px solid #46351D;
 }
-
 .nav a {
     background-color: #CF5C36;
     color: #46351D;
@@ -105,5 +100,3 @@ footer hr{
 .left-footer {
   text-align: left;
 }
-
-/* Form styling */
