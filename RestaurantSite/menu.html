@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Power Plant</title>
+
+  <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway&display=swap" rel="stylesheet">
+  <link href="styles/restaurantStyle.css" rel="stylesheet" type="text/css">
+
+  <style>
+    /* place all styles for menu here*/
+    .menu {
+      background-color: #BCC963;
+      text-align: center;
+    }
+    .menu p {
+      font-family: "Raleway", sans-serif;
+    }
+    .menu h4{
+      font-family: "Comfortaa", cursive;
+    }
+    .row {
+      padding: 10px;
+    }
+    table {
+      border: 1px solid #CF5C36;
+      border-collapse: collapse;
+      padding: 5px 10px;
+      text-align: left;
+    }
+    tr:nth-child(odd){
+      background-color: #C2C094;
+    }
+    th {
+      background-color: #91972A;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+  </style>
+
+  <noscript>This site is best viewed with Javascript enabled.</noscript>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <p>Menu</p>
+      <hr />
+      <div class="name">
+        <h1>Power Plant <img src="images/leaf.png" align="top"/> </h1>
+      </div>
+    </header>
+
+    <!-- <nav class="my-nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+      <div class="clear-float"></div>
+    </nav> -->
+    <nav class="nav nav-pills nav-justified">
+      <a class="nav-link" href="index.html"><i class="fa fa-home"></i></a>
+      <a class="nav-link active" href="menu.html">Menu</a>
+      <a class="nav-link" href="contact.html">Contact Us</a>
+    </nav>
+
+
+    <!-- Make sure menu items are larger than descriptions -->
+    <div class="menu">
+      <div class="row">
+        <div class="col">
+          <h4>Cauliflower Fried Rice</h4>
+          <p>Gluten-free Chinese style dish that contains tofu, cauliflower, minced ginger, garlic, carrots, peas, green onions, cashews, soy sauce, and garnished with sesame seeds.</p>
+          <p>$7.95</p>
+        </div>
+
+        <div class="col">
+          <h4>Red Curry Mac 'n Cheese</h4>
+          <p>Elbow macaroni with creamy cheese sauce made out of red curry paste and vegan cheddar cheese, mixed with tofu bites, kale, and baby spinach.</p>
+          <p>$6.95</p>
+        </div>
+
+        <div class="col">
+          <h4>Pita Pizza</h4>
+          <p>Seasoned homemade tomato sauce on top of whole wheat pita bread, topped with olives, smoked tofu, peperoncinos, zucchini, vegan parmesan, and basil.</p>
+          <p>$8.95</p>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h4>Skillet Echiladas</h4>
+          <p>Corn tortillas stuffed with fresh vegetables (butternut squash, black beans, corn, tomatoes, corn) and our seasoned enchilada sauce, with jalapenos, green onions, and avocado on top.</p>
+          <p>$11.95</p>
+        </div>
+
+        <div class="col">
+          <h4>Caprese Panini</h4>
+          <p>Vegan pesto and mozzerella cheese, with fresh tomatoes and basil, served on two slices of sourdough bread.</p>
+          <p>$5.95</p>
+        </div>
+
+        <div class="col">
+          <h4>Spiced Lentil Soup</h4>
+          <p>Warm soup containing fresh veggies (onions, carrots, tomatoes, garlic, kale) and lentils, made with vegetable broth and spiced with curry powder, cumin, thyme, salt, black pepper, and red pepper flakes.</p>
+          <p>$6.95</p>
+        </div>
+      </div>
+
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th colspan="2">Beverages</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Root Beer</td>
+          <td>$3.00</td>
+        </tr>
+        <tr>
+          <td>Bottled Water</td>
+          <td>$1.25</td>
+        </tr>
+        <tr>
+          <td>Lemonade</td>
+          <td>$1.00</td>
+        </tr>
+        <tr>
+          <td>Iced Tea</td>
+          <td>$1.25</td>
+      </tbody>
+    </table>
+
+    </div>
+
+    <footer>
+      <hr/>
+      <p>517 W Leaf Lane, Minneapolis, Minnesota, 55111</p>
+      <p>(715) 279-3663</p>
+    </footer>
+  </div>
+
+  <!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

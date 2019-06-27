@@ -1,0 +1,109 @@
+/*
+Creator: Maisy Dodge
+Date created: 06/24/2019
+Date last modified:
+*/
+
+/* Restaurant Name */
+
+.name h1{
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 3em;
+  position: relative;
+}
+
+.description {
+  background-color: #BCC963;
+  font-size: 20px;
+  text-align: center;
+}
+.description p {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-family: "Raleway", sans-serif;
+}
+.jumbotron {
+  background-color: #CF5C36;
+  color: #46351D;
+  border: thick solid #91972A;
+  margin-top: 10px;
+  padding: 30px;
+}
+
+body {
+    background-color: #C2C094;
+    font-family: "Raleway";
+    color: #46351D;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.clear-float {
+    clear:both;
+}
+
+hr {
+  border: 3px solid #46351D;
+}
+header p{
+  margin-top: 10px;
+}
+.carousel-item{
+  text-align: center;
+  height: 150px;
+  margin-top: 50px;
+}
+
+/* Nav styling */
+.nav {
+  background-color: #91972A;
+  border-top: 3px solid #46351D;
+  border-bottom: 3px solid #46351D;
+}
+
+.nav a {
+    background-color: #CF5C36;
+    color: #46351D;
+    padding: 8px;
+    font-size: 100%;
+    border: thin solid #46351D;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 150px;
+    float: left;
+    font-family: "Comfortaa", sans-serif;
+}
+.nav a:visited {
+    color: #BCC963;
+}
+.nav a:hover{
+    background-color: #C2C094;
+    color: #46351D;
+    text-decoration: none;
+    font-weight: 900;
+}
+.nav-pills .nav-link.active{
+    background-color: #C2C094;
+    color: #46351D;
+    font-weight: 900;
+}
+.nav-pills {
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+footer hr{
+  margin-top: 0px;
+}
+.left-footer {
+  text-align: left;
+}
+
+/* Form styling */

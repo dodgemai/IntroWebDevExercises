@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Power Plant</title>
+
+  <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Raleway&display=swap" rel="stylesheet">
+  <link href="styles/restaurantStyle.css" rel="stylesheet" type="text/css">
+
+  <script>
+  function validateForm() {
+    var name = document.forms["contactForm"]["name"].value;
+    var email = document.forms["contactForm"]["email"].value;
+    var reason = document.forms["contactForm"]["reason"].value;
+    if (name == "") {
+      alert("Name must be filled out.");
+      return false;
+    }
+    if (email == ""){
+      alert("Email must be filled out.");
+      return false;
+    }
+    if (reason == ""){
+      alert("Reason must be filled out.");
+      return false;
+    }
+    else {
+      alert("Information is valid! Thank you!");
+    }
+    return false;
+  }
+  </script>
+
+  <noscript>This site is best viewed with Javascript enabled.</noscript>
+
+  <style>
+  /* place all styles for contact us here*/
+    form {
+      margin-top: 40px;
+    }
+    label {
+      font-size: 1.2em;
+       margin: auto;
+    }
+    /* Required form field */
+    label[for=name], label[for=email], label[for=reason]{
+      font-weight: 900;
+    }
+
+    input[type=text] {
+      border: 2px solid #46351D;
+      width: 40%;
+      padding: 8px 8px;
+      margin: 10px 0;
+      box-sizing: border-box;
+      font-size: 1.2em;
+    }
+
+    fieldset{
+      background-color: #BCC963;
+      width: 100%;
+      padding: 12px 20px;
+      margin: 12px 0;
+      box-sizing: border-box;
+    }
+
+    select, textarea {
+      margin: 12px 0;
+      font-size: 1.22em;
+    }
+
+    input[type=submit] {
+      font-size: 1.5em;
+      background-color: #CF5C36;
+      color: #C2C094;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: thin solid #46351D;
+    }
+    input[type=submit]:hover {
+      background-color: #46351D;
+      color: #BCC963;
+      border: thin solid #CF5C36;
+    }
+    textarea {
+      width: 100%;
+      height: 200px;
+      padding: 12px 20px;
+      margin: 12px 0;
+      box-sizing: border-box;
+      border: 2px solid #46351D;
+      border-radius: 3px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <p>Contact Us</p>
+      <hr />
+      <div class="name">
+        <h1>Power Plant <img src="images/leaf.png" align="top"/> </h1>
+      </div>
+    </header>
+
+    <nav class="nav nav-pills nav-justified">
+      <a class="nav-link" href="index.html"><i class="fa fa-home"></i></a>
+      <a class="nav-link" href="menu.html">Menu</a>
+      <a class="nav-link active" href="contact.html">Contact Us</a>
+    </nav>
+
+
+    <form name="contactForm" method="POST" onsubmit="return validateForm();">
+      <div class="form-group row">
+        <label for="name">Name:</label><br/>
+        <div class="col">
+          <input type="text" id="name" name="name"><br/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="email">Email:</label><br />
+        <div class="col">
+          <input type="text" id="email" name="email"> <br />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="phone">Phone:</label><br />
+        <div class="col">
+          <input type="text" id="phone" name="phone"> <br />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="reason">Reason for Inquiry:</label><br/>
+        <div class="col">
+          <select id="reason" name="reason">
+            <option value="default" selected>Catering</option>
+            <option value="party">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select> <br/>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="info">Additional Information:</label><br />
+        <div class="col">
+          <textarea id="info" name="info"></textarea><br />
+        </div>
+      </div>
+      <div class="form-group row">
+        <fieldset>
+          <legend>Have you been to the restaurant?</legend>
+            <input type="radio" id="choice1" name="question" value="no">
+            <label for="choice1">No</label><br/>
+            <input type="radio" id="choice2" name="question" value="yes">
+            <label for="choice2">Yes</label><br/>
+        </fieldset>
+      </div>
+      <div class="form-group row">
+        <fieldset>
+        <legend>Best days to contact you: </legend>
+          <input type="checkbox" id="monday" name="days" value="monday">
+          <label for="monday">Monday</label><br />
+          <input type="checkbox" id="tuesday" name="days" value="tuesday">
+          <label for="tuesday">Tuesday</label><br />
+          <input type="checkbox" id="wednesday" name="days" value="wednesday">
+          <label for="wednesday">Wednesday</label><br />
+          <input type="checkbox" id="thursday" name="days" value="thursday">
+          <label for="thursday">Thursday</label><br />
+          <input type="checkbox" id="friday" name="days" value="friday">
+          <label for="friday">Friday</label><br />
+        </fieldset>
+      </div>
+        <input type="submit" name="submit" value="Send Request">
+      </div>
+    </form>
+
+    <footer>
+      <hr/>
+      <p>517 W Leaf Lane, Minneapolis, Minnesota, 55111</p>
+      <p>(715) 279-3663</p>
+    </footer>
+  </div>
+</body>
+</html>
