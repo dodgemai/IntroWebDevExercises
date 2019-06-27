@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  font-size: 24px;
+  background-color: #D2D4CD;
+}
+h1 {
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+  color: #04395E;
+}
+.btn:hover {
+  background-color: #9E2B25;
+  border: thick solid #C4AB39;
+  color: #FFF8F0;
+}
+.btn-primary{
+  background-color: #C4AB39;
+  border: thick solid #04395E;
+  color: #04395E;
+  font-size: 24px;
+  width: 60%;
+}
+.btn {
+  padding: 10px;;
+}
+
+/* Table styles */
+.table th{
+  font-size: 1.5em;
+  background-color: #9E2B25;
+  color: #FFF8F0;
+  text-align: center;
+}
+.table {
+  font-size: 16px;
+  text-align: left;
+}

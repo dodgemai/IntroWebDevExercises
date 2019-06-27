@@ -33,5 +33,12 @@ function playGame(){
     }
   }
 
-  
+  document.getElementById("results").style.display = "block";
+  document.getElementById("playButton").innerText = "Play Again";
+  document.getElementById("start").innerText = startBet;
+  document.getElementById("totalRolls").innerText = numRolls;
+  document.getElementById("highestAmount").innerText = maxMoney;
+  document.getElementById("rollsHighest").innerText = rollsAtMax;
+
+  return false;
 }

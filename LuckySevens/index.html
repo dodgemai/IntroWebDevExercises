@@ -4,12 +4,13 @@
 	<title>Lucky Sevens</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="styles/luckySevens.css" rel="stylesheet" type="text/css">
 
-	<script type="text/javascript" src="luckySevens.js"></script>
+	<script type="text/javascript" src="scripts/luckySevens.js"></script>
 
 </head>
 <body>
-	<div class="container">
+	<div class="container col-md-3">
 
 		<h1>Lucky Sevens</h1>
 
@@ -37,6 +38,32 @@
 
     <br />
 
+    <table id="results" class="table table-striped" style="display:none;">
+      <thead>
+        <tr>
+          <th colspan="2">Results</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Starting Bet</td>
+          <td><span id="start"></span></td>
+        </tr>
+        <tr>
+          <td>Total Rolls Before Going Broke</td>
+          <td><span id="totalRolls"></span></td>
+        </tr>
+        <tr>
+          <td>Highest Amount Won</td>
+          <td><span id="highestAmount"></span></td>
+        </tr>
+        <tr>
+          <td>Roll Count at Highest Amount Won</td>
+          <td><span id="rollsHighest"></span></td>
+        </tr>
+      </tbody>
+    </table>
 	</div>
 
 
